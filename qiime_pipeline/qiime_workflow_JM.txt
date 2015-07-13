@@ -202,6 +202,10 @@ http://arxiv.org/abs/1302.3753
 >make a UPGMA sample tree (another way to view the PCoA clusters)
 http://qiime.org/scripts/upgma_cluster.html
 
+>Convert a biom table back to tab-delimited
+convert_biom.py -i otu_table.biom -o otu_table.txt -b --header_key='taxonomy"
+
+
 #------------------------------
 # Other notes
 
