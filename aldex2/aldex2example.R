@@ -9,7 +9,7 @@
 library(ALDEx2)
 
 #read in a table of counts data
-d<-read.table("input_table.txt", sep="\t", quote="", check.names=F, header=T, row.names=1)
+d<-read.table("input_table.txt", sep="\t", quote="", check.names=F, header=T, row.names=1, comment.char="")
 
 #alternatively, you can load the example dataset "selex"
 #data(selex)
