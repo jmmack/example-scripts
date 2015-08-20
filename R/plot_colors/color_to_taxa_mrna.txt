@@ -1,0 +1,40 @@
+Taxon	color
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus_iners	steelblue3
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus_crispatus	skyblue1
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus_jensenii	#cfebff
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus_gasseri	#1C4466
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus_johnsonii	#1C4466
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus	#0066CC
+Bacteria;Actinobacteria;Actinobacteria;Bifidobacteriales;Bifidobacteriaceae;Gardnerella	indianred1
+Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales;Prevotellaceae;Prevotella	mediumpurple1
+Bacteria;Actinobacteria;Actinobacteria;Coriobacteriales;Coriobacteriaceae;Atopobium	ivory2
+Bacteria;Firmicutes;Negativicutes;Selenomonadales;Veillonellaceae;Megasphaera	olivedrab3
+Unknown;Other;Other;Other;Other;Other	#FFED6F
+Bacteria;Fusobacteria;Fusobacteriia;Fusobacteriales;Leptotrichiaceae;Sneathia	pink
+Bacteria;Other;Other;Other;Other;Other	mediumorchid3
+Bacteria;Firmicutes;Negativicutes;Selenomonadales;Veillonellaceae;Dialister	royalblue4
+Bacteria;Firmicutes;Negativicutes;Selenomonadales;Veillonellaceae;Veillonella	tan1
+Bacteria;Firmicutes;Clostridia;Clostridiales;Lachnospiraceae;unclassified	aquamarine3
+Bacteria;Firmicutes;Clostridia;Clostridiales;Clostridiales Family XI. Incertae Sedis;Peptoniphilus	#C0C0C0
+Bacteria;Firmicutes;Clostridia;Clostridiales;Clostridiales Family XI. Incertae Sedis;Anaerococcus	mediumvioletred
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Streptococcaceae;Streptococcus	#999933
+Bacteria;Fusobacteria;Fusobacteriia;Fusobacteriales;Fusobacteriaceae;Fusobacterium	#666699
+Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales;Porphyromonadaceae;Porphyromonas	#CC9933
+Bacteria;Fusobacteria;Fusobacteriia;Fusobacteriales;Leptotrichiaceae;Leptotrichia	#006666
+Bacteria;Actinobacteria;Actinobacteria;Bifidobacteriales;Bifidobacteriaceae;Bifidobacterium	#FF9900
+Bacteria;Firmicutes;Clostridia;Clostridiales;Clostridiales Family XI. Incertae Sedis;Finegoldia	#993300
+Bacteria;Firmicutes;Other;Other;Other;Other	#CCCC99
+Bacteria;Tenericutes;Mollicutes;Mycoplasmatales;Mycoplasmataceae;Mycoplasma	#666666
+Bacteria;Firmicutes;Clostridia;Clostridiales;Clostridiales Family XI. Incertae Sedis;Parvimonas	#FFCC66
+Bacteria;Firmicutes;Clostridia;Clostridiales;unclassified;unclassified	#663366
+Bacteria;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus	#9999CC
+Bacteria;Proteobacteria;Gammaproteobacteria;Enterobacteriales;Enterobacteriaceae;Escherichia	#CCCCCC
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Aerococcaceae;Aerococcus	#669999
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Enterococcaceae;Enterococcus	#CCCC66
+Bacteria;Actinobacteria;Actinobacteria;Actinomycetales;Actinomycetaceae;Actinomyces	#CC6600
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Carnobacteriaceae;Granulicatella	#9999FF
+Bacteria;Actinobacteria;Actinobacteria;Actinomycetales;Actinomycetaceae;Mobiluncus	#999966
+Bacteria;Firmicutes;Clostridia;Clostridiales;Clostridiales Family XI. Incertae Sedis;Other	#99CCCC
+Bacteria;Actinobacteria;Actinobacteria;Actinomycetales;Corynebacteriaceae;Corynebacterium	#999999
+Bacteria;Firmicutes;Bacilli;Lactobacillales;Aerococcaceae;Eremococcus	#FFCC00
+Bacteria;Firmicutes;Clostridia;Clostridiales;Lachnospiraceae;Stomatobaculum	#009999
