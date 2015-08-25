@@ -84,7 +84,7 @@ biom convert -i td_OTU_tag_mapped_lineage.txt -o otu_table.biom --table-type="ot
 biom summarize-table -i otu_table.biom -o otu_table_stats.txt
 
 #Number of OTUs per sample
-biom summarize-table -i ../otu_table_filter.biom --qualitative -o stats_otu_table_filter_qual.txt
+biom summarize-table -i otu_table.biom --qualitative -o otu_table_stats_qual.txt
 
 
 ##### LOOK AT THESE FILES ^^^^^ ####
@@ -100,7 +100,7 @@ summarize_taxa.py -i otu_table.biom -L 2,3,4,5,6,7 -o taxa_summary
 # This gives absolute read counts. Use these for plotting barplots in R
 summarize_taxa.py -a -i otu_table.biom -L 2,3,4,5,6,7 -o taxa_summary_absolute/
 
-plot_taxa_summary.py -i bdiv_all/taxa_summary/otu_table_L1.txt,bdiv_all/taxa_summary/otu_table_L2.txt,bdiv_all/taxa_summary/otu_table_L3.txt,bdiv_all/taxa_summary/otu_table_L4.txt,bdiv_all/taxa_summary/otu_table_L5.txt,bdiv_all/taxa_summary/otu_table_L6.txt,bdiv_all/taxa_summary/otu_table_L7.txt -o bdiv_all/taxa_summary/plots
+plot_taxa_summary.py -i taxa_summary/otu_table_L1.txt,taxa_summary/otu_table_L2.txt,taxa_summary/otu_table_L3.txt,taxa_summary/otu_table_L4.txt,taxa_summary/otu_table_L5.txt,taxa_summary/otu_table_L6.txt,taxa_summary/otu_table_L7.txt -o taxa_summary/plots
 
 
 UniFrac beta-diversity analysis
@@ -110,9 +110,6 @@ UniFrac beta-diversity analysis
 		e.g sequences have to be named OTU_0 if that is the column header in your OTU table
 - Any non-matching IDs in the tree OR the OTU table will be IGNORED by QIIME
 - For V6: MUSCLE recommended over any structure/reference-based alignments
-
-- To begin macqiime, type macqiime in your terminal on cjelli
-
 
 mkdir muscle
 muscle -in ../../workflow_out/all_seed_OTUs.fa -out muscle/all_seed_OTUs_bad.mfa
