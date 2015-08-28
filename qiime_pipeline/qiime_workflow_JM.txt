@@ -78,13 +78,16 @@ R CMD BATCH $BIN/OTU_to_QIIME.R OTU_to_QIIME.out
 
 biom convert -i td_OTU_tag_mapped_lineage.txt -o otu_table.biom --table-type="otu table" -t dense --process-obs-metadata=taxonomy
 
+For QIIME 1.9:
+biom convert -i otu_table_psn_v35.txt -o otu_table.biom --to-hdf5 --table-type="OTU table"
+
 
 2) Summarize the dataset (OTU table)
 # Read counts per sample
-biom summarize-table -i otu_table.biom -o otu_table_stats.txt
+biom summarize-table -i otu_table.biom -o stats_otu_table.txt
 
 #Number of OTUs per sample
-biom summarize-table -i otu_table.biom --qualitative -o otu_table_stats_qual.txt
+biom summarize-table -i otu_table.biom --qualitative -o stats_otu_table_qual.txt
 
 
 ##### LOOK AT THESE FILES ^^^^^ ####
@@ -165,11 +168,21 @@ make_3d_plots.py -i bdiv_all/weighted_unifrac_pc.txt -m metadata_table.txt -t bd
 # Other useful scripts
 
 > Filter your OTU table by sample or metadata
-filter_samples_from_otu_table.py
-http://qiime.org/scripts/filter_samples_from_otu_table.html
+
+#filter samples by total read counts (at least 150 counts per sample)
+filter_samples_from_otu_table.py -i otu_table.biom -o otu_table_150.biom -n 150
+
+#filter OTUs by total count (at least 100 read counts per OTU)
+filter_otus_from_otu_table.py -i otu_table_150.biom -o otu_table_r150_o100.biom -n 100
+
+#Check the stats
+biom summarize-table -i otu_table_r150_o100.biom | head -n 12
+
+#Filter the OTU fasta to match
+filter_fasta.py -f rep_set_v35.fna -b otu_table_r150_o100.biom -o rep_set_v35_r150_o100.fna
 
 
-#e.g. 
+#e.g. filtering by metadata
 
 mkdir bdiv_all/filter
 
