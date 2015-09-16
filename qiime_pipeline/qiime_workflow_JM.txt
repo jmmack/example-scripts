@@ -22,7 +22,7 @@ Formats:
 
 1) OTU table:
 
-	# Comment header here													
+	# Comment header here
 	#OTU ID	47bcont	35bcont	21bcont	53bcont	61bcont	taxonomy
 	0	29552	1814	19424	8617	30149	Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus;iners
 	1	3665	1081	2428	5742	1605	Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus;crispatus
@@ -41,7 +41,7 @@ Formats:
 	47bcont	0	b_cont	NA	41	n	n	0	ND	n
 	35bcont	0	b_cont	NA	36	n	n	0	ND	n
 	21bcont	0	b_cont	NA	45	n	n	0	ND	n
-	
+
 - First column starts with "#SampleID" and lists the IDs exactly matching the IDs in your OTU table (see 1)
 - Each subsequent column can have any information you want to be able to view (age, group, time point, etc)
 
@@ -76,11 +76,27 @@ R CMD BATCH $BIN/OTU_to_QIIME.R OTU_to_QIIME.out
 
 - In QIIME, convert to .biom
 
-biom convert -i td_OTU_tag_mapped_lineage.txt -o otu_table.biom --table-type="otu table" -t dense --process-obs-metadata=taxonomy
-
 For QIIME 1.9:
 biom convert -i otu_table_psn_v35.txt -o otu_table.biom --to-hdf5 --table-type="OTU table"
 
+(old versions of QIIME may use:)
+biom convert -i td_OTU_tag_mapped_lineage.txt -o otu_table.biom --table-type="otu table" -t dense --process-obs-metadata=taxonomy
+
+#-----------------------------------------------------------------------------
+#### NOTE ###
+# In QIIME 1.9 There is one convenient script that performs most of the analyses below automatically
+# You need to have your .biom OTU table, your mapping (metadata) file, and an OTU tree
+#
+# http://qiime.org/scripts/core_diversity_analyses.html
+#		alpha_rarefaction.py
+#		beta_diversity_through_plots.py
+#		summarize_taxa_through_plots.py
+#		make_distance_boxplots.py
+#		compare_alpha_diversity.py
+#		group_significance.py
+#------------------------------------------------------------------------------
+
+# ...Otherwise, here are the individual scripts:
 
 2) Summarize the dataset (OTU table)
 # Read counts per sample
@@ -182,7 +198,7 @@ biom summarize-table -i otu_table_r150_o100.biom | head -n 12
 filter_fasta.py -f rep_set_v35.fna -b otu_table_r150_o100.biom -o rep_set_v35_r150_o100.fna
 
 
-#e.g. filtering by metadata
+# Also, you can go back and filter a distance matrix
 
 mkdir bdiv_all/filter
 
@@ -211,6 +227,8 @@ http://arxiv.org/abs/1302.3753
 
 >make a UPGMA sample tree (another way to view the PCoA clusters)
 http://qiime.org/scripts/upgma_cluster.html
+
+upgma_cluster.py -i weighted_unifrac_dm.txt -o weighted_cluster.tre
 
 >Convert a biom table back to tab-delimited
 convert_biom.py -i otu_table.biom -o otu_table.txt -b --header_key='taxonomy"
