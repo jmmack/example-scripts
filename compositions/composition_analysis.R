@@ -17,10 +17,18 @@ library(zCompositions)
 d <- read.table("all_counts.txt", header=T, row.names=1)
 
 
-# discard if the feature/gene is a zero in half or more of the samples
-cutoff = 1-.5
-d.0 <- data.frame(d[which(apply(d, 1, function(x){length(which(x == 0))/length(x)}) < cutoff),])
+#---------------------------------------------------------------------------------------------------
+# Filtering #
 
+# discard feature if it is a zero in half or more of the samples
+cutoff = .5
+d.1 <- data.frame(d[which(apply(d, 1, function(x){length(which(x != 0))/length(x)}) > cutoff),])
+
+#Remove features with < 500 total counts (row sum < 500)
+count = 500
+d.0 <- data.frame(d.1[which(apply(d.1, 1, function(x){sum(x)}) > count),])
+
+#---------------------------------------------------------------------------------------------------
 # from zCompositions
 # replace 0 with a Bayesian estimate of 0
 # this is proportions, to get counts use 'output="counts"'

@@ -1,0 +1,21 @@
+#17-Jun-2015
+
+#setup variables
+#only need to run these once
+BIN=/Volumes/longlunch/seq/tscome_bin
+BIN2=/Volumes/longlunch/seq/LRGC/mellis9/bin
+FT=/Volumes/longlunch/seq/LRGC/mellis9/reference/ft_all.txt
+
+#sort reads by chromosome position
+$BIN/count_reads_SAM.pl 899-1.sam > sorted_899-1.out
+#note: this is counting the START of the read. So reads could extend beyond feature boundary
+#(according to GG's comments)
+
+#add reads to feature table
+#keeping fwd and rev separate
+$BIN/add_reads_to_features.pl sorted_899-1.out $FT 0 > reads_899-1.txt
+
+#pull out counts for the strand the feature is encoded on
+#ALDEx-compatible
+$BIN2/get_strand_count.pl reads_899-1.txt > test.txt
+
