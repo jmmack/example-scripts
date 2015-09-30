@@ -7,3 +7,4 @@ FORMATTING GFF FOR HTSEQ
 - Third column must have the type of feature you want to map and you must define it when running the script with -t (e.g. "-t gene")
 
 SEE MY EXAMPLES
+And the web: http://www-huber.embl.de/users/anders/HTSeq/doc/count.html
