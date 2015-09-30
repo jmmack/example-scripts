@@ -26,3 +26,7 @@ htseq-count sample.sam sample_htseq.gff -t gene -i gene_id -a 0 > out_sample_q0.
 #---------------------------------------------
 
 get_counts_q0.sh is a loop through multiple sample IDs
+
+I also concatenated multiple sample counts files (tab-delimited):
+
+paste *_counts_q0.txt | column -s $'\t' -t > all_counts.txt
