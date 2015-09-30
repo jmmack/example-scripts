@@ -4,7 +4,21 @@ FORMATTING GFF FOR HTSEQ
 - Contig ID (first column) must match to mapping file (SAM format)
 - NO duplicated entries (with same start and end positions)
 - Must have a unique gene identifier with some kind of tag in the annotation (last) column (e.g. mine has "gene_id=")
+	- If you are not using the default (gene_id) you must define with -i
 - Third column must have the feature type you want to map and you must define it (exact match to word) when running the script with -t (e.g. "-t gene")
 
 SEE MY EXAMPLES
 And the web: http://www-huber.embl.de/users/anders/HTSeq/doc/count.html
+
+
+htseq-count sample.sam sample_htseq.gff -t gene -i gene_id -a 0 > out_sample_q0.txt 2>&1&
+
+-a qscore cutoff (default of 10)
+
+
+
+#get the assignment information
+	grep "__" out_sample_q0.txt >> q0_summary.txt
+
+#get the counts tables per sample
+	grep "^gene" out_$sample_q0.txt > sample_counts_q0.txt
