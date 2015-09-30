@@ -1,0 +1,9 @@
+FORMATTING GFF FOR HTSEQ
+
+- NO headers
+- Contig ID (first column) must match to mapping file (SAM format)
+- NO duplicated entries (with same start and end positions)
+- Must have a unique gene identifier with some kind of tag in the annotation (last) column (e.g. mine has "gene_id=")
+- Third column must have the type of feature you want to map and you must define it when running the script with -t (e.g. "-t gene")
+
+SEE MY EXAMPLES
