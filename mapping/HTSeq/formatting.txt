@@ -6,15 +6,15 @@ FORMATTING GFF FOR HTSEQ
 - Must have a unique gene identifier with some kind of tag in the annotation (last) column (e.g. mine has "gene_id=")
 	- If you are not using the default (gene_id) you must define with -i
 - Third column must have the feature type you want to map and you must define it (exact match to word) when running the script with -t (e.g. "-t gene")
+- -a qscore cutoff (default of 10)
 
-SEE MY EXAMPLES
+
+SEE MY EXAMPLES (get_counts_q0.sh, genes_htseq.gff)
 And the web: http://www-huber.embl.de/users/anders/HTSeq/doc/count.html
+#---------------------------------------------
 
-
+# Example for one sample:
 htseq-count sample.sam sample_htseq.gff -t gene -i gene_id -a 0 > out_sample_q0.txt 2>&1&
-
--a qscore cutoff (default of 10)
-
 
 
 #get the assignment information
@@ -22,3 +22,7 @@ htseq-count sample.sam sample_htseq.gff -t gene -i gene_id -a 0 > out_sample_q0.
 
 #get the counts tables per sample
 	grep "^gene" out_$sample_q0.txt > sample_counts_q0.txt
+
+#---------------------------------------------
+
+get_counts_q0.sh is a loop through multiple sample IDs
