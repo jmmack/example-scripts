@@ -1,5 +1,5 @@
 For R:
-- See installation and compilation instructions
+- See installation and compilation instructions (rmarkdown_install.R)
 
 For GitHub:
 - Make sure to use GitHub markdown style
