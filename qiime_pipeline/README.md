@@ -10,7 +10,7 @@ For biom format see:
 http://biom-format.org/documentation/biom_format.html
 
 ---
-##Input files
+## Input files
 
 Minimum for UniFrac analysis:
 1. OTU table
@@ -20,7 +20,7 @@ Minimum for UniFrac analysis:
 EXAMPLE DATA are in the `test_data` directory.  
 You should be able to run these example files through this workflow
 
-####File Formats:
+#### File Formats:
 
 1) OTU table:
 
@@ -59,10 +59,10 @@ You should be able to run these example files through this workflow
 
 
 ---
-##Now for the analyses within QIIME
+## Now for the analyses within QIIME
 - To begin macqiime, type `macqiime` in your terminal on cjelli
 
-####General workflow:
+#### General workflow:
 1. Convert OTU table to .biom format
 2. Summarize the dataset
 3. Summarize the taxonomy and plot
@@ -72,7 +72,7 @@ You should be able to run these example files through this workflow
 5. Biplots
 
 
-#####1) Convert OTU table to .biom format in QIIME  
+##### 1) Convert OTU table to .biom format in QIIME  
 _IF YOUR OTUs ARE IN COLUMNS RATHER THAN ROWS (e.g. GG's output): transpose the table using R script or Excel
 `R CMD BATCH $BIN/OTU_to_QIIME.R OTU_to_QIIME.out`_
 
@@ -95,8 +95,8 @@ Old versions of QIIME may use:
 
  >...Otherwise, here are the individual scripts:
 
-#####2) Summarize the dataset (OTU table)
-######Read counts per sample
+##### 2) Summarize the dataset (OTU table)
+###### Read counts per sample
 `biom summarize-table -i otu_table.biom -o stats_otu_table.txt`
 
 ######Number of OTUs per sample
@@ -109,7 +109,7 @@ Old versions of QIIME may use:
 Make sure your data are OK before continuing. **If you do ANY filtering, or manipulation of your OTU table, RUN THESE STATS AGAIN _AND LOOK AT THE FILE_**
 
 
-#####3) Summarize and plot the taxonomy  
+##### 3) Summarize and plot the taxonomy  
 This will sum your counts per taxonomic level (2 is generally phylum, down to 7 which is generally species)
 
 This gives tables of relative values:  
@@ -121,8 +121,8 @@ Use the above summarized tables to plot QIIME-style barplots
 `plot_taxa_summary.py -i taxa_summary/otu_table_L1.txt,taxa_summary/otu_table_L2.txt,taxa_summary/otu_table_L3.txt,taxa_summary/otu_table_L4.txt,taxa_summary/otu_table_L5.txt,taxa_summary/otu_table_L6.txt,taxa_summary/otu_table_L7.txt -o taxa_summary/plots`
 
 
-#####4) UniFrac beta-diversity analysis
-###### a) OTU multiple sequence alignment (for UniFrac analysis)
+##### 4) UniFrac beta-diversity analysis
+###### i) OTU multiple sequence alignment (for UniFrac analysis)
 
 - The tips/sequences MUST have the same names as the OTU IDs in your OTU table (see 1)  
 	_e.g sequences have to be named OTU_0 if that is the column header in your OTU table_
@@ -139,12 +139,12 @@ awk '/^>/{gsub(/lcl\|[0-9]+\|num\|[0-9]+\|OTU\|/, "")}; 1' muscle/all_seed_OTUs_
 rm muscle/all_seed_OTUs_bad.mfa
 ````
 
-######a) Make a phylogenetic tree based on OTU sequence alignment
+###### i) Make a phylogenetic tree based on OTU sequence alignment
 - Default in QIIME is FastTree
 
 `make_phylogeny.py -i muscle/all_seed_OTUs.mfa -o muscle/fasttree_all_seed_OTUs.tre`
 
-######b) Run UniFrac analysis and produce beta-diversity plots
+###### ii) Run UniFrac analysis and produce beta-diversity plots
 
 Basic command:
 
@@ -160,7 +160,7 @@ For more info on the scripts being run:
 http://qiime.org/scripts/beta_diversity_through_plots.html
 
 ---
-#####5) Make biplots showing correlations between PCoA clustering and abundant taxa
+##### 5) Make biplots showing correlations between PCoA clustering and abundant taxa
 
 `make_3d_plots.py -i bdiv_all/weighted_unifrac_pc.txt -m metadata_table.txt -t bdiv_all/taxa_summary/otu_table_L6.txt --n_taxa_keep 10 -o bdiv_all/3d_biplot_L6_weighted`
 
