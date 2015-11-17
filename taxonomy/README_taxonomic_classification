@@ -1,0 +1,52 @@
+#Nov 2014, JM
+#-----------------------------------------------------
+#Pre-made database files:
+http://www.mothur.org/wiki/Taxonomy_outline
+
+#RDP, GreenGenes, Silva
+
+You need 2 files:
+- A FASTA
+- A .tax file matching the FASTA
+
+
+#script
+http://www.mothur.org/wiki/Classify.seqs
+#-----------------------------------------------------
+#Getting human oral microbiota database for Kyle's data to test
+http://www.homd.org/download/NGS_Pipeline/
+http://www.homd.org/index.php?name=seqDownload&file&type=R
+
+
+#Trying mothur classification
+#already installed new version of mothur and added to path
+# HOMD already has file formats for this
+
+
+#---------
+
+
+#Set output
+mothur > set.dir(output=./)
+
+Mothur's directories:
+outputDir=/Groups/LRGC/kyle/JM/mothur/
+
+#run classifier
+mothur > classify.seqs(fasta=/Groups/LRGC/kyle/analysis_secondrun/OTU_seed_seqs.fa, template=/Groups/LRGC/kyle/JM/HOMD/HOMD_16S_rRNA_RefSeq_V13.2.mothur.fasta.txt, taxonomy=/Groups/LRGC/kyle/JM/HOMD/HOMD_16S_rRNA_RefSeq_V13.2.mothur.taxonomy.txt)
+
+#with strict cutoff
+classify.seqs(fasta=/Groups/LRGC/kyle/analysis_secondrun/OTU_seed_seqs.fa, template=/Groups/LRGC/kyle/JM/HOMD/HOMD_16S_rRNA_RefSeq_V13.2.mothur.fasta.txt, taxonomy=/Groups/LRGC/kyle/JM/HOMD/HOMD_16S_rRNA_RefSeq_V13.2.mothur.taxonomy.txt, cutoff=80)
+
+#output without the bootstrap values:
+probs=F
+
+#change output dir
+outputdir=
+#This HAS to already exist, otherwise it will fall back to default and overwrite your files
+
+
+#All together now
+classify.seqs(fasta=/Groups/LRGC/kyle/analysis_secondrun/OTU_seed_seqs.fa, template=/Groups/LRGC/kyle/JM/HOMD/HOMD_16S_rRNA_RefSeq_V13.2.mothur.fasta.txt, taxonomy=/Groups/LRGC/kyle/JM/HOMD/HOMD_16S_rRNA_RefSeq_V13.2.mothur.taxonomy.txt, cutoff=80, probs=F, outputdir=test)
+
+#This gives a parsable output to put on OTU table
