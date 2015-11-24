@@ -128,7 +128,6 @@ Use the above summarized tables to plot QIIME-style barplots
 	_e.g sequences have to be named OTU_0 if that is the column header in your OTU table_
 - Any non-matching IDs in the tree OR the OTU table will be IGNORED by QIIME
 - For V6: MUSCLE recommended over any structure/reference-based alignments
-
 ````
 mkdir muscle
 muscle -in ../../workflow_out/all_seed_OTUs.fa -out muscle/all_seed_OTUs_bad.mfa
@@ -150,11 +149,11 @@ Basic command:
 
 `beta_diversity_through_plots.py -i otu_table.biom -m metadata_table.txt -o bdiv_all -t muscle/fasttree_all_seed_OTUs.tre`
 
--i is the OTU table  
--m is the metadata table  
--o is your output directory (I like to name it with the value I rarefied to)  
--t is the Newick tree file  
--e is the number of reads to rarefy all samples too
+`-i` is the OTU table  
+`-m` is the metadata table  
+`-o` is your output directory (I like to name it with the value I rarefied to)  
+`-t` is the Newick tree file  
+`-e` is the number of reads to rarefy all samples too
 
 For more info on the scripts being run:  
 http://qiime.org/scripts/beta_diversity_through_plots.html
@@ -218,7 +217,7 @@ http://qiime.org/scripts/upgma_cluster.html
 `convert_biom.py -i otu_table.biom -o otu_table.txt -b --header_key='taxonomy"`
 
 ### Beta diversity manually, step-by-step
-_This is only necessary if the `beta_diversity_though_plots.py` doesn't work, or if you want to make a new distance matrix or coordinates file_
+_This is only necessary if_ `beta_diversity_though_plots.py` _doesn't work, or if you want to make a new distance matrix or coordinates file_
 
 
 1) Make UniFrac distance Matrix  
