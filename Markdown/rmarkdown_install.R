@@ -46,3 +46,12 @@ library("rmarkdown")
 render("Outline.Rmd", "pdf_document")
 # render multiple formats
 render("input.Rmd", c("html_document", "pdf_document"))
+
+## ERRORS:
+# Sometimes BasicTeX is missing some components needed to render a PDF
+# These are the ones I had to install
+
+sudo /usr/local/texlive/2015basic/bin/x86_64-darwin/tlmgr update --self
+sudo /usr/local/texlive/2015basic/bin/x86_64-darwin/tlmgr install framed
+sudo /usr/local/texlive/2015basic/bin/x86_64-darwin/tlmgr install titlesec
+sudo /usr/local/texlive/2015basic/bin/x86_64-darwin/tlmgr install titling
