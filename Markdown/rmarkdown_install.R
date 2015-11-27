@@ -9,7 +9,10 @@
 # Some resources:
 http://kbroman.org/knitr_knutshell/pages/Rmarkdown.html
 	#this explains installing pandoc
+
 http://shiny.rstudio.com/articles/rmarkdown.html
+	#this is the best guide to Markdown in R with knittr
+	#However, it focuses on using RStudio
 
 https://github.com/rstudio/rmarkdown#installation
 	#install rmarkdown
