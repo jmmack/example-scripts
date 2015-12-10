@@ -58,3 +58,10 @@ sudo /usr/local/texlive/2015basic/bin/x86_64-darwin/tlmgr update --self
 sudo /usr/local/texlive/2015basic/bin/x86_64-darwin/tlmgr install framed
 sudo /usr/local/texlive/2015basic/bin/x86_64-darwin/tlmgr install titlesec
 sudo /usr/local/texlive/2015basic/bin/x86_64-darwin/tlmgr install titling
+
+
+"pandoc: pdflatex not found. pdflatex is needed for pdf output.
+Error: pandoc document conversion failed with error 41"
+
+sudo ln -s /usr/texbin/pdflatex /usr/local/bin/
+
