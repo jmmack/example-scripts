@@ -41,7 +41,7 @@ d.bf <- cmultRepl(t(d.0), label=0, method="CZM")
 #transform data to CLR
 # the apply function rotates the data when by row, so turn it back to samples by row
 
-d.n0.clr <- t(apply(d, 1, function(x){log2(x) - mean(log2(x))}))
+d.n0.clr <- t(apply(d.bf, 1, function(x){log2(x) - mean(log2(x))}))
 
 
 # generate the PCA object
