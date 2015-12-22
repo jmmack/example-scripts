@@ -69,4 +69,8 @@ points(x.all$diff.win[sig], x.all$diff.btw[sig], pch=19,
 abline(0,1,lty=2)
 abline(0,-1,lty=2)
 
+#add labels to points on the plot
+text(x.all$diff.win, x.all$diff.btw, labels=row.names(x.all), cex= 0.7)
+
+
 
