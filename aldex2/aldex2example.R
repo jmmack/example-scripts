@@ -51,3 +51,22 @@ dev.off()
 pdf("MW.pdf")
 aldex.plot(x.all, type="MW", test="welch")
 dev.off()
+
+#-----------------------------------------------------------------------------------------------
+#more advanced
+
+#get features passing significance
+
+sig <- which(x.all$we.eBH < 0.05)
+
+#plot diff btwn vs diff within
+#plot significant points in a different color
+#add the effect=1 and -1 lines
+plot(x.all$diff.win, x.all$diff.btw, pch=19, cex=0.3, col=rgb(0,0,0,0.3),
+ xlab="Difference within", ylab="Difference betweenn")
+points(x.all$diff.win[sig], x.all$diff.btw[sig], pch=19,
+ cex=0.5, col=rgb(0,0,1,0.5))
+abline(0,1,lty=2)
+abline(0,-1,lty=2)
+
+
