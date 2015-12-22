@@ -59,6 +59,9 @@ dev.off()
 
 sig <- which(x.all$we.eBH < 0.05)
 
+#only significant points in the positive direction
+psig <- which(x.all$we.eBH < 0.05 & x.all$diff.btw > 0)
+
 #plot diff btwn vs diff within
 #plot significant points in a different color
 #add the effect=1 and -1 lines
@@ -70,7 +73,11 @@ abline(0,1,lty=2)
 abline(0,-1,lty=2)
 
 #add labels to points on the plot
-text(x.all$diff.win, x.all$diff.btw, labels=row.names(x.all), cex= 0.7)
+text(x.all$diff.win, x.all$diff.btw, labels=row.names(x.all), cex= 0.7, pos=3)
 
+#only the positive significant points
+text(x.all$diff.win[psig], x.all$diff.btw[psig], labels=row.names(x.all[psig,]), cex= 0.7, pos=3)
 
+#Add a label to a single (named) point
+text(x.all["sample1",]$diff.win, x.all["sample1",]$diff.btw, labels=row.names(x.all["sample1",]), cex= 0.7, pos=3, col="red")
 
