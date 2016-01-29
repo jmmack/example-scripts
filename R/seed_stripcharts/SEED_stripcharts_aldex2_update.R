@@ -4,6 +4,7 @@
 #Update Feb 26 for fixed subsys4 at e-6
 #Update Mar 19, 2013 for B. cereus data
 #Update 2-Jul-2014: For the new ALDEx2 format
+#Update 29-Jan-2016: drop the "Clustering-based subsystems" automatically
 
 #------------------------------------------------------------------------------------
 # To run this script:
@@ -29,13 +30,22 @@ base_col="#00000050"
 #Define your columns of interest for significance
 col<-"we.eBH"
 
-cutoff=0.05
+cutoff=0.1
 
 #use difference between or effect size for the x-axis
 #diff<-"diff.btw"
 diff<-"effect"
 
 #d[,col]
+
+#------------------------------------------------
+# Filter unwanted subsystems (don't want to plot them)
+
+d <- subset(d, d$subsys1 != "Clustering-based subsystems")
+d <- d[-grep("CBSS", d$subsys3),]
+
+d<-droplevels(d)	#drop unused levels (R remembers them for some reason)
+#------------------------------------------------
 
 
 #make the x-axis symmetrical based on the highest value
@@ -56,6 +66,7 @@ for (i in 1:3){
 
 #get all the unique functions for the current level. [[]] removes quotes around "subsys1"
 	groups<-unique(d[[g]])
+	droplevels(groups)	#drop unused levels
 
 	ylim<-c(length(groups) - (length(groups)+0.5), length(groups) + 0.5)
 
