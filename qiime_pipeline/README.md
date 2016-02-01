@@ -77,9 +77,11 @@ _IF YOUR OTUs ARE IN COLUMNS RATHER THAN ROWS (e.g. GG's output): transpose the 
 `R CMD BATCH $BIN/OTU_to_QIIME.R OTU_to_QIIME.out`_
 
 For QIIME 1.9:
-`biom convert -i otu_table_psn_v35.txt -o otu_table.biom --to-hdf5 --table-type="OTU table"`
+
+`biom convert -i otu_table_psn_v35.txt -o otu_table.biom --table-type="OTU table"`
 
 Old versions of QIIME may use:
+
 `biom convert -i td_OTU_tag_mapped_lineage.txt -o otu_table.biom --table-type="otu table" -t dense --process-obs-metadata=taxonomy`
 
 ---
