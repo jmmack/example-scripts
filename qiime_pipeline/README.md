@@ -78,7 +78,7 @@ _IF YOUR OTUs ARE IN COLUMNS RATHER THAN ROWS (e.g. GG's output): transpose the 
 
 For QIIME 1.9:
 
-`biom convert -i otu_table_psn_v35.txt -o otu_table.biom --table-type="OTU table"`
+`biom convert -i otu_table_psn_v35.txt -o otu_table.biom --table-type="OTU table" --process-obs-metadata=taxonomy`
 
 Old versions of QIIME may use:
 
