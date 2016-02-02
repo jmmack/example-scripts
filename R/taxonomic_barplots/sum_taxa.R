@@ -1,6 +1,6 @@
 #1Feb2016 JM
 # Sum a counts table by taxonomic level (equivalent to QIIME's summarize_taxa.py function
-# Original: /Groups/twntyfr/analysis_2016/heatmap_barplot/sum_taxa.R
+# Original: /Groups/twntyfr/analysis_2016/mRNA_barplot/mRNA_barplot.R
 
 d<-read.table("/Groups/twntyfr/analysis/merged_readcounts_taxonomy.txt", sep="\t", quote="", check.names=F, header=T, row.names=1, comment.char="")
 
@@ -29,3 +29,7 @@ split6 <- sapply(strsplit(as.character(tax), ";"), "[", 6)
 
 #6 is genus in this data set
 dm.agg6 <- aggregate(dm, by=list(split6), FUN=sum)
+#move labels to rownames so the data are numeric
+rownames(agg6) <- agg6$Group.1
+agg6$Group.1 <- NULL
+
