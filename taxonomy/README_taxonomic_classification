@@ -50,3 +50,21 @@ outputdir=
 classify.seqs(fasta=/Groups/LRGC/kyle/analysis_secondrun/OTU_seed_seqs.fa, template=/Groups/LRGC/kyle/JM/HOMD/HOMD_16S_rRNA_RefSeq_V13.2.mothur.fasta.txt, taxonomy=/Groups/LRGC/kyle/JM/HOMD/HOMD_16S_rRNA_RefSeq_V13.2.mothur.taxonomy.txt, cutoff=80, probs=F, outputdir=test)
 
 #This gives a parsable output to put on OTU table
+
+#---------
+#From MiSeq workflow
+
+MOTHUR="/Volumes/longlunch/seq/annotationDB/mothur/mothur"
+TEMPLATE="/Volumes/longlunch/seq/annotationDB/mothur/Silva.nr_v119/silva.nr_v119.align"
+TAXONOMY="/Volumes/longlunch/seq/annotationDB/mothur/Silva.nr_v119/silva.nr_v119.tax"
+name="study1"
+
+# File path to the miseq_bin folder
+BIN="/Volumes/longlunch/seq/LRGC/miseq_bin/"
+
+TAX_FILE=taxonomy_$name/*.taxonomy
+# ^This file will be output by classify.seqs
+#NOTE: Your output (outputdir) directory has to exist already!!
+
+$MOTHUR "#classify.seqs(fasta=analysis_$name/OTU_seed_seqs.fa, template=$TEMPLATE, taxonomy=$TAXONOMY, cutoff=70, probs=T, outputdir=taxonomy_$name, processors=4)"
+$BIN/add_taxonomy_mothur.pl $TAX_FILE analysis_$name/td_OTU_tag_mapped.txt > taxonomy_$name/td_OTU_tag_mapped_lineage.txt
