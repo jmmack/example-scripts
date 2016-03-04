@@ -4,6 +4,7 @@
 # Read in table with row and column names maintained
 d<-read.table("~/Downloads/patient data.txt", sep="\t", quote="", check.names=F, header=T, row.names=1, fill=T)
 
+#-------
 #summarize a column
 table(d$"History of IV drug use")
  no yes
@@ -22,6 +23,7 @@ table(d$"History of IV drug use", d$Endocarditis)
   yes  5                1                2                   0                  11
 
 
+#-------
 # Subset the data based on cutoffs
 # e.g. get patients over 30 with history of IV drug use
 d2<-d[ which(d$"History of IV drug use"=='yes' & d$Age > 30), ]
@@ -32,6 +34,8 @@ nrow(d2)
 	[1] 35
 # So therefore 35 people are >30 and have a history of IV drug use
 
+
+#-------
 # Get the difference in days between 2 dates
 
 #Convert to date format
