@@ -3,7 +3,7 @@ d <- read.table("table.txt", header=T, sep="\t", quote="", row.names=1, check.na
 Access data in the dataframe
 
 df$10A #Get a column (by name)
-df[“Lactobacillus", ] #Get a row (by name)
+df["Lactobacillus", ] #Get a row (by name)
 
 Add a row to an existing data frame
 http://gregorybooma.wordpress.com/2012/07/18/add-an-empty-column-and-row-to-an-r-data-frame/
