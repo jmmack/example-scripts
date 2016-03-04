@@ -12,4 +12,4 @@ named.groups[named.groups == "L"] <- "DNA replication, recombination and repair 
 bv<-td[grep("bbv", rownames(td)),]
 
 # using OR
-bv<-td[grep(‘(bbv|bvvc)', rownames(td)),]
+bv<-td[grep('(bbv|bvvc)', rownames(td)),]
