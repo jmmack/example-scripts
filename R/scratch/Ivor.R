@@ -31,3 +31,15 @@ d2<-d[ which(d$"History of IV drug use"=='yes' & d$Age > 30), ]
 nrow(d2)
 	[1] 35
 # So therefore 35 people are >30 and have a history of IV drug use
+
+# Get the difference in days between 2 dates
+
+#Convert to date format
+x<-as.Date(d$"Date of Hospital Admission", format="%d-%b-%y")
+y<-as.Date(d$"Date of Hospital Discharge", format="%d-%b-%y")
+
+#Calc difference in days
+diff<-difftime(y, x)
+
+# Add this as a column to the table
+d$days_in_hospital<-as.numeric(diff)
