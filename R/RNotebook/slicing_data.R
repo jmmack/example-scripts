@@ -25,7 +25,7 @@ Example to get unique subsys4+refseq:
 bv<-td[grep("bbv", rownames(td)),]
 
 # using OR
-bv<-td[grep(‘(bbv|bvvc)', rownames(td)),]
+bv<-td[grep('(bbv|bvvc)', rownames(td)),]
 
 #Get row numbers for features
 psig <- which(x.all$we.eBH < 0.05 & x.all$diff.btw > 0)
