@@ -8,7 +8,7 @@ e<-droplevels(e)
 
 # Drop a levels in a factor by name
 # See SEED_stripcharts_aldex2_update.R
-groups<-unique(d[[“subsys1"]])
+groups<-unique(d[["subsys1"]])
 groups <- droplevels(subset(groups, groups != "Clustering-based subsystems"))
 
 #drop levels in a factor by greping part of a name
