@@ -1,0 +1,23 @@
+## RDP seqmatch classification
+# This is ONE WAY to assign taxononmic classification to OTUs. There are many other options for annotation
+# You are assigning taxonomy to your OTU seed sequences - NOT all the sequences in that OTU cluster
+# The seqmatch script will evaluate the first 20 hits only baed on the S_ab score (based on kmer coverage - see RDP site for details)
+# Threshold for assignemnt is set at S_ab >= 0.6. If multiple reference seqs match at equal S_ab, the lowest common taxonomy will be reported
+
+# This must be done online: http://rdp.cme.msu.edu/seqmatch/seqmatch_intro.jsp
+# Change "Source:" to "Isolates"
+
+# Download the output as text
+# Either put this in your analysis directory, or make a new directory in analysis for "taxonomy"
+seqmatch_download.txt
+
+# You need to parse the seqmatch output to pick approximate taxonomies based on threshold cutoffs
+# Set your BIN first:
+BIN="/Groups/LRGC/miseq_bin/"
+
+$BIN/parse_RDP.pl seqmatch_download.txt > parsed_RDP.txt
+
+# Now add the parsed lineages to your OTU table
+$BIN/RDP_lineage.pl parsed_RDP.txt td_OTU_tag_mapped.txt > td_OTU_tag_mapped_lineage.txt
+
+#This OTU table will be your input for QIIME
