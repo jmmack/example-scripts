@@ -1,1 +1,1 @@
-Look at the most up-to-date script
+Use the script with the latest time stamp
