@@ -1,3 +1,6 @@
+## DON'T USE THIS
+## IT DOESN'T WORK
+
 #This script uses a vector of column names to remove these columns from a dataframe
 
 d <- read.table("TableS1.txt", header=T, sep="\t", quote="", row.names=1, check.names=F, skip=1, comment.char="")
