@@ -1,0 +1,242 @@
+Acinetobacter baumannii ATCC 19606
+Actinomyces coleocanis DSM 15436
+Actinomyces urogenitalis DSM 15434
+Aerococcus urinae ACS 120 V Col10a
+Aerococcus viridans ATCC 11563
+Anaerococcus hydrogenalis ACS 025 V Sch4
+Anaerococcus lactolyticus ATCC 51172
+Anaerococcus prevotii ACS 065 V Col13
+Anaerococcus prevotii DSM 20548
+Anaerococcus tetradius ATCC 35098
+Atopobium parvulum DSM 20469
+Atopobium ICM58
+Atopobium rimae ATCC 49626
+Atopobium vaginae DSM 15829
+Atopobium vaginae PB189 T1 4
+Bifidobacterium breve ACS 071 V Sch8b
+Bifidobacterium dentium ATCC 27679
+Bifidobacterium dentium JCVIHMP022
+Brevibacterium mcbrellneri ATCC 49030
+Brevundimonas subvibrioides ATCC 15264
+Brevundimonas BAL3
+Brevundimonas diminuta 470 4
+Brevundimonas diminuta ATCC 11568
+candidate division TM7 genomosp GTL1
+candidate division TM7 single cell isolate TM7a
+candidate division TM7 single cell isolate TM7b
+candidate division TM7 single cell isolate TM7c
+Chryseobacterium gleum ATCC 35910
+Clostridiales genomosp BVAB3 UPII9 5
+Comamonas testosteroni CNB 2
+Comamonas testosteroni ATCC 11996
+Comamonas testosteroni KF 1
+Comamonas testosteroni NBRC 100989
+Comamonas testosteroni S44
+Corynebacterium aurimucosum ATCC 700975
+Corynebacterium genitalium ATCC 33030
+Corynebacterium glucuronolyticum ATCC 51866
+Corynebacterium glucuronolyticum ATCC 51867
+Corynebacterium jeikeium ATCC 43734
+Corynebacterium lipophiloflavum DSM 44291
+Corynebacterium pseudogenitalium ATCC 33035
+Corynebacterium striatum ATCC 6940
+Dialister invisus DSM 15470
+Dialister micraerophilus DSM 19965
+Dialister microaerophilus UPII 345 E
+Dialister succinatiphilus YIT 11850
+Enterococcus faecalis ATCC 29200
+Enterococcus faecalis HH22
+Enterococcus faecalis TX0312
+Enterococcus faecalis TX0635
+Enterococcus faecalis TX0855
+Eremococcus coleocola ACS 139 V Col8
+Escherichia coli 83972
+Escherichia coli CFT073
+Finegoldia magna ACS 171 V Col3
+Finegoldia magna ATCC 29328
+Finegoldia magna ATCC 53516
+Finegoldia magna BVS033A4
+Finegoldia magna SY403409CC001050417
+Fusobacterium nucleatum ATCC 23726
+Fusobacterium nucleatum polymorphum ATCC 10953
+Gardnerella vaginalis 315 A
+Gardnerella vaginalis 409 05
+Gardnerella vaginalis ATCC 14019
+Gardnerella vaginalis HMP9231
+Gardnerella vaginalis 5 1
+Gardnerella vaginalis 284V
+Gardnerella vaginalis 0288E
+Gardnerella vaginalis 00703Bmash
+Gardnerella vaginalis 00703C2mash
+Gardnerella vaginalis 00703Dmash
+Gardnerella vaginalis 1400E
+Gardnerella vaginalis 1500E
+Gardnerella vaginalis 6119V5
+Gardnerella vaginalis 6420B
+Gardnerella vaginalis 6420LIT
+Gardnerella vaginalis 55152
+Gardnerella vaginalis 75712
+Gardnerella vaginalis AMD
+Gardnerella vaginalis ATCC 14018
+Granulicatella adiacens ATCC 49175
+Granulicatella elegans ATCC 700633
+Haemophilus parainfluenzae HK262
+Lachnospiraceae bacterium 1 1 57FAA
+Lachnospiraceae bacterium 1 4 56FAA
+Lachnospiraceae bacterium 2 1 46FAA
+Lachnospiraceae bacterium 2 1 58FAA
+Lachnospiraceae bacterium 3 1 46FAA
+Lachnospiraceae bacterium 3 1 57FAA CT1
+Lachnospiraceae bacterium 4 1 37FAA
+Lachnospiraceae bacterium 5 1 57FAA
+Lachnospiraceae bacterium 5 1 63FAA
+Lachnospiraceae bacterium 6 1 63FAA
+Lachnospiraceae bacterium 7 1 58FAA
+Lachnospiraceae bacterium 8 1 57FAA
+Lachnospiraceae bacterium 9 1 43BFAA
+Lachnospiraceae bacterium ACC2
+Lachnospiraceae bacterium ICM7
+Lachnospiraceae bacterium oral taxon 082 F0431
+Lachnospiraceae oral taxon 107 F0167
+Lactobacillus acidophilus NCFM
+Lactobacillus coleohominis 101 4 CHN
+Lactobacillus crispatus 125 2 CHN
+Lactobacillus crispatus 214 1
+Lactobacillus crispatus CTV 05
+Lactobacillus crispatus FB049 03
+Lactobacillus crispatus FB077 07
+Lactobacillus crispatus JV V01
+Lactobacillus crispatus MV 1A US
+Lactobacillus crispatus MV 3A US
+Lactobacillus crispatus ST1
+Lactobacillus delbrueckii bulgaricus PB2003 044 T3 4
+Lactobacillus fermentum 28 3 CHN
+Lactobacillus gasseri ATCC 33323
+Lactobacillus gasseri 202 4
+Lactobacillus gasseri 224 1
+Lactobacillus gasseri CECT 5714
+Lactobacillus gasseri JV V03
+Lactobacillus gasseri MV 22
+Lactobacillus iners ATCC 55195
+Lactobacillus iners DSM 13335
+Lactobacillus iners LactinV 01V1 a
+Lactobacillus iners LactinV 03V1 b
+Lactobacillus iners LactinV 09V1 c
+Lactobacillus iners LactinV 11V1 d
+Lactobacillus iners LEAF 2052A d
+Lactobacillus iners LEAF 2053A b
+Lactobacillus iners LEAF 2062A h1
+Lactobacillus iners LEAF 3008A a
+Lactobacillus iners SPIN 1401G
+Lactobacillus iners SPIN 2503V10 D
+Lactobacillus iners UPII 143 D
+Lactobacillus iners UPII 60 B
+Lactobacillus jensenii 115 3 CHN
+Lactobacillus jensenii 1153
+Lactobacillus jensenii 269 3
+Lactobacillus jensenii 27 2 CHN
+Lactobacillus jensenii JV V16
+Lactobacillus jensenii SJ 7A US
+Lactobacillus johnsonii ATCC 33200
+Lactobacillus johnsonii pf01
+Lactobacillus johnsonii DPC 6026
+Lactobacillus johnsonii FI9785
+Lactobacillus johnsonii NCC 533
+Lactobacillus oris PB013 T2 3
+Lactobacillus reuteri DSM 20016
+Lactobacillus reuteri JCM 1112
+Lactobacillus reuteri SD2112
+Lactobacillus rhamnosus ATCC 8530
+Lactobacillus rhamnosus GG
+Lactobacillus rhamnosus Lc 705
+Lactobacillus salivarius ACS 116 V Col5a
+Lactobacillus vaginalis ATCC 49540
+Leptotrichia buccalis C 1013 b
+Leptotrichia goodfellowii F0264
+Leptotrichia hofstadii F0254
+Leptotrichia shahii DSM 19757
+Leptotrichia wadei DSM 19758
+Megasphaera UPII 135 E
+Megasphaera UPII 199 6
+Megasphaera genomosp type 1 28L
+Megasphaera micronuciformis F0359
+Megasphaera elsdenii DSM 20460
+Mobiluncus curtisii ATCC 35241
+Mobiluncus curtisii ATCC 43063
+Mobiluncus curtisii ATCC 51333
+Mobiluncus curtisii holmesii ATCC 35242
+Mobiluncus mulieris 28 1
+Mobiluncus mulieris ATCC 35239
+Mobiluncus mulieris ATCC 35243
+Mobiluncus mulieris FB024 16
+Mycobacterium parascrofulaceum ATCC BAA 614
+Mycoplasma genitalium G37
+Mycoplasma genitalium M2288
+Mycoplasma genitalium M2321
+Mycoplasma genitalium M6282
+Mycoplasma genitalium M6320
+Mycoplasma hominis ATCC 23114
+Mycoplasma penetrans HF 2
+Parvimonas micra ATCC 33270
+Parvimonas oral taxon 110 F0139
+Parvimonas oral taxon 393 F0440
+Peptoniphilus duerdenii ATCC BAA 1640
+Peptoniphilus harei ACS 146 V Sch2b
+Peptoniphilus lacrimalis 315 B
+Porphyromonas asaccharolytica DSM 20707
+Porphyromonas gingivalis ATCC 33277
+Porphyromonas gingivalis TDC60
+Porphyromonas gingivalis W83
+Porphyromonas asaccharolytica PR426713P I
+Porphyromonas bennonis DSM 23058
+Porphyromonas catoniae F0037
+Porphyromonas endodontalis ATCC 35406
+Porphyromonas gingivalis W50
+Porphyromonas gulae DSM 15663
+Porphyromonas levii DSM 23370
+Porphyromonas macacae DSM 20710
+Porphyromonas oral taxon 279 F0450
+Porphyromonas somerae DSM 23386
+Porphyromonas uenonis 60 3
+Prevotella amnii CRIS 21A A
+Prevotella amnii DSM 23384
+Prevotella bivia DSM 20514
+Prevotella bivia JCVIHMP010
+Prevotella buccalis ATCC 35310
+Prevotella bergensis DSM 17361
+Prevotella denticola CRIS 18C A
+Prevotella disiens FB035 09AN
+Prevotella melaninogenica ATCC 25845
+Prevotella oralis ATCC 33269
+Prevotella timonensis CRIS 5C B1
+Propionibacterium 409 HC1
+Propionibacterium 434 HC2
+Proteus mirabilis ATCC 29906
+Roseomonas cervicalis ATCC 49957
+Sphingobacterium spiritivorum ATCC 33300
+Sphingobacterium spiritivorum ATCC 33861
+Streptococcus agalactiae 2 22
+Streptococcus agalactiae 2603V R
+Streptococcus agalactiae A909
+Streptococcus agalactiae GD201008 001
+Streptococcus agalactiae NEM316
+Streptococcus agalactiae SA20 06
+Staphylococcus aureus MN8
+Staphylococcus aureus Newman
+Staphylococcus aureus COL
+Streptococcus bovis ATCC 700338
+Streptococcus pseudoporcinus SPIN 20026
+Treponema phagedenis F0421
+Veillonella 3 1 44
+Veillonella 6 1 27
+Veillonella ACP1
+Veillonella atypica ACS 049 V Sch6
+Veillonella atypica ACS 134 V Col7a
+Veillonella atypica KON
+Veillonella dispar ATCC 17748
+Veillonella oral taxon 158 F0412
+Veillonella oral taxon 780 F0422
+Veillonella parvula ACS 068 V Sch12
+Veillonella parvula ATCC 17745
+Veillonella ratti ACS 216 V Col6b
+Veillonella parvula DSM 2008
