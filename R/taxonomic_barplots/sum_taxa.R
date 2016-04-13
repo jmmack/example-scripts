@@ -1,5 +1,5 @@
 #1Feb2016 JM
-# Sum a counts table by taxonomic level (equivalent to QIIME's summarize_taxa.py function
+# Sum a counts table by taxonomic level (equivalent to QIIME's summarize_taxa.py function)
 # Original: /Groups/twntyfr/analysis_2016/mRNA_barplot/mRNA_barplot.R
 
 d<-read.table("/Groups/twntyfr/analysis/merged_readcounts_taxonomy.txt", sep="\t", quote="", check.names=F, header=T, row.names=1, comment.char="")
