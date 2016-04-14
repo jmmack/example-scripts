@@ -1,3 +1,5 @@
+### Compositional Data Analysis (CoDa)
+
 If you are just starting with compositional biplot analysis, go to:
 
 `example_compositional_biplot.R`
