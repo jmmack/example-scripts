@@ -1,18 +1,36 @@
-#Get a list of filenames from a directory
-#Parse out the basename
+#!/usr/bin/env bash
+#14Apr2016 JM
 
-e.g. A01_2016_R1.fastq.gz
+# Rename the sequences in the scaffold file by the genome ID
+# concatenate them all into one file for a BLAST database
 
-for f in $DATA_DIR/*_R1.fastq.gz; do
-  #	echo "$f"
+# This is my working directory
+#/Volumes/iners/AL_biologicals/AL_genomes
+
+
+for f in AFR97/*.final.scaffolds.fasta; do
+#	echo $f
 	B=`basename $f`
-  #	echo "basename: $B"
-  #basename: A01_2016_R1.fastq.gz
 
-  #Split on underscore, and get the first field
-	NAME=`echo $B | cut -d "_" -f1`
-  #	echo "name: $NAME"
-  #name: A01
+#	echo "basename: $B"
+#	basename: A04.final.scaffolds.fasta
+
+# Split on . and get the first field
+	NAME=`echo $B | cut -d "." -f1`
+
+#	echo "name: $NAME"
+#	name: A04
+
+#substitute the beginning of each header with the name (genome ID) of the file it comes from
+	sed "s/>/>${NAME}_/g" $f > ${NAME}_scaffolds_named.fasta
 done
 
+# concatenated into one file and remove the temp files
+	cat *_scaffolds_named.fasta > AFR97/all_scaffolds.ffn
+	rm *_scaffolds_named.fasta
+
+# Note: all output will be in the working directory by default (of course)
+
+
 #See dirname also
+# original: /Volumes/iners/AL_biologicals/AL_genomes/cat_genomes.sh
