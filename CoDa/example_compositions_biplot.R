@@ -70,7 +70,15 @@ r.mvar <- mvar(r.clr)
 #calculate principal components
 #features are COLUMNS
 r.pcx <- prcomp(r.clr)
-#To see your "Scree plot": plot(d.pcx)
+#--- Side Bar ---#
+# To see your "Scree plot"
+#   plot(d.pcx)
+
+# You can sum up the variances for all features per sample (variance across all components of the PCA)
+# IN THEORY: samples with a summed variance closer to zero are more "typical" or "average" of the group
+# and samples with very large variances are potential outliers
+#   rowSums(d.pcx$x)
+# Note: these summed variances will differe if you add or remove samples
 
 # Make the number of points equal to the number of features (for feature labels)
 #use: "o" or "."
