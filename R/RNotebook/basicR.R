@@ -17,7 +17,7 @@ d$sampleID #You can also pull a column by name
 d[,1:4] #columns 1 to 4
 d["001A",] #get a row by name
 
-#summarizing yoou data
+#summarizing your data
 colSums(d) # Sum a column
 table(d$taxonomy) # get a contigency table for that column
 summary(d) or summary(d$length) #get summary statistics (e.g. quartiles, mean, median)
