@@ -70,6 +70,7 @@ r.mvar <- mvar(r.clr)
 #calculate principal components
 #features are COLUMNS
 r.pcx <- prcomp(r.clr)
+#To see your "Scree plot": plot(d.pcx)
 
 # Make the number of points equal to the number of features (for feature labels)
 #use: "o" or "."
