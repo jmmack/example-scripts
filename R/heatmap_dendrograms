@@ -1,0 +1,13 @@
+#make a dendrogram
+
+hc <- hclust(dist(d.clr))
+plot(hc)
+
+# Heatmap changing the hclust and dist functions
+
+#try average linkage clustering
+av <- function(x) hclust(x, method="average")
+man <- function(x) dist(x, method="manhattan")
+
+heatmap.2(t(d.clr), trace="none", col=rev(heat.colors(16)), dendrogram="column", labRow=NA, hclustfun=av, distfun=man)
+dev.off()
