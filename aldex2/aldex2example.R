@@ -19,6 +19,7 @@ C<-c("010B", "001B", "009B")
 I<-c("002B", "004B", "006B")
 
 #this will retain the same order as the lists above
+# NOTE: ALDEx input must be a DATA FRAME *not* a matrix
 aldex.in<-d[,c(C, I)]
 
 #Make a vector of conditions. This must be in the same order and the same number as the columns (samples) of the input table (aldex.in)
