@@ -5,7 +5,7 @@ http://www.statmethods.net/index.html
 http://cran.r-project.org/doc/contrib/Short-refcard.pdf
 very useful!  
 
-More:
+More:  
 http://cran.r-project.org/doc/contrib/refcard.pdf  
 http://cran.r-project.org/doc/contrib/Baggott-refcard-v2.pdf
 
