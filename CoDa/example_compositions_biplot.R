@@ -100,3 +100,10 @@ biplot(r.pcx, cex=c, col=col, var.axes=F,
     scale=0, ylabs=points
 )
 dev.off()
+
+# You should also consider making a dendrogram of samples:
+https://github.com/mmacklai/example-scripts/blob/master/R/heatmap_dendrograms.R
+
+hc <- hclust(dist(d.clr))
+plot(hc)
+
