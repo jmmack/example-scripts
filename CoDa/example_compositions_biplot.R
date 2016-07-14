@@ -106,4 +106,7 @@ https://github.com/mmacklai/example-scripts/blob/master/R/heatmap_dendrograms.R
 
 hc <- hclust(dist(d.clr))
 plot(hc)
+#line up labels
+plot(hc, hang=-1)
+
 
