@@ -34,3 +34,14 @@ dm.agg6 <- aggregate(dm, by=list(split6), FUN=sum)
 rownames(agg6) <- agg6$Group.1
 agg6$Group.1 <- NULL
 
+#--------------------------------------------------------------------------------------------------
+# Another example
+# Get the otu number, genus, species in one string
+# This is based on a standard OTU counts table with taxonomy as the last column
+split <- strsplit(as.character(d$taxonomy), ";")
+
+for (i in 1:length(split)){
+t[i]<-paste(rownames(d)[i], split[[i]][6], split[[i]][7], sep="_")
+}
+
+
