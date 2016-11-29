@@ -31,8 +31,8 @@ split6 <- sapply(strsplit(as.character(tax), ";"), "[", 6)
 #6 is genus in this data set
 dm.agg6 <- aggregate(dm, by=list(split6), FUN=sum)
 #move labels to rownames so the data are numeric
-rownames(agg6) <- agg6$Group.1
-agg6$Group.1 <- NULL
+rownames(dm.agg6) <- dm.agg6$Group.1
+dm.agg6$Group.1 <- NULL
 
 #--------------------------------------------------------------------------------------------------
 # Another example
