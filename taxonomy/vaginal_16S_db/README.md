@@ -7,10 +7,12 @@ Reference Package S1
 
 (vaginal-0.9.2-raxml.refpkg) Contains files required for classification of vaginal reference sequences in the V3/V4 region of the 16S rRNA gene.
 
+`taxtable.csv` contains the NCBI taxid for the taxonomic lineage (I have not parsed these out yet for the sequence names)
 
 #### Processing
 
 Gaps were removed from the sequence alignment file `vaginal.phylip-convex.fasta`, and taxonomic names were pulled from `chosen.csv-convex`
 
 #### Output
-A single gap-less multi-fasta of taxonomically named V3-V4 sequences
+A single gap-less multi-fasta of taxonomically named V3-V4 sequences `vagrefv3v4.fasta`
+
