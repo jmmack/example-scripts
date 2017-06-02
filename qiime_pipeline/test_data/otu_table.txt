@@ -1,4 +1,3 @@
-#header here																											
 #OTU ID	47bcont	35bcont	21bcont	53bcont	61bcont	19bcont	22bcont	38bcont	31bcont	36bcont	225bbv	226bbv	261bbv	262bbv	285bbv	286bbv	321bbv	322bbv	295bbv	296bbv	247bbv	248bbv	297bbv	298bbv	235bbv	236bbv	taxonomy
 0	29552	1814	19424	8617	30149	5833	10625	3056	2509	34585	5236	2003	654	642	1696	3772	2051	1523	1306	12441	995	1022	1267	1605	658	12370	Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus;iners
 1	3665	1081	2428	5742	1605	1591	2977	918	2045	7007	200	4392	269	330	332	398	154	250	536	992	582	526	144	265	218	393	Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus;crispatus
