@@ -24,11 +24,11 @@ You should be able to run these example files through this workflow
 
 1) OTU table:
 
-	# Comment header here
-	#OTU ID	47bcont	35bcont	21bcont	53bcont	61bcont	taxonomy
-	0	29552	1814	19424	8617	30149	Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus;iners
-	1	3665	1081	2428	5742	1605	Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus;crispatus
-	2	867	6379	1926	6447	1418	2407	Bacteria;Actinobacteria;Actinobacteria;Bifidobacteriales;Bifidobacteriaceae;Gardnerella;vaginalis
+		#Comment header here. 
+		#OTU ID	47bcont	35bcont	21bcont	53bcont	61bcont	taxonomy  
+		0	29552	1814	19424	8617	30149	Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus;iners
+		1	3665	1081	2428	5742	1605	Bacteria;Firmicutes;Bacilli;Lactobacillales;Lactobacillaceae;Lactobacillus;crispatus
+		2	867	6379	1926	6447	1418	2407	Bacteria;Actinobacteria;Actinobacteria;Bifidobacteriales;Bifidobacteriaceae;Gardnerella;vaginalis
 
 - First line is a comment line (describe any information you want about the table)
 - Second line starts with "#OTU ID" and each tab-delimited column is a sample ID
