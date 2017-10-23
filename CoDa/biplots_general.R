@@ -27,16 +27,16 @@ d.czm <- cmultRepl(t(d.1),  label=0, method="CZM")
 #need to transpose because of cmultRepl
 d.clr <- t(apply(d.czm, 1, function(x){log(x) - mean(log(x))}))
 
+#calculate principal components
+#features are COLUMNS
+d.pcx <- prcomp(d.clr)
+
 # Sum the total variance
 d.mvar <- sum(d.pcx$sdev^2)
 # Calculate the PC1 and PC2 variance
 PC1 <- paste("PC1: ", round(sum(d.pcx$sdev[1]^2)/d.mvar, 3))
 PC2 <- paste("PC2: ", round(sum(d.pcx$sdev[2]^2)/d.mvar, 3))
 # We are pasting together the component name and the variance to make an axes label
-
-#calculate principal components
-#features are COLUMNS
-d.pcx <- prcomp(d.clr)
 
 # Make the number of points equal to the number of features (for labels)
 #use: "o" or "."
