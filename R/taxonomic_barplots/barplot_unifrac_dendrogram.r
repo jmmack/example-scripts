@@ -6,8 +6,8 @@ d <- read.table("otu_table.txt", header=T, sep="\t", row.names=1, comment.char="
 #100bvvc	7665
 
 #Sum OTU/taxon counts for each sample and get fraction values. 1=row 2=col
-# IMPORTNT: the first col must be the first OTU col
-y <- apply( data.matrix(d[1:nrow(d),1:(ncol(d)-1])), 1, function(x) { x / sum(x) } )
+# IMPORTANT: the first col must be the first OTU col
+y <- apply( data.matrix(d[1:nrow(d),1:(ncol(d)-1)]), 1, function(x) { x / sum(x) } )
 ### PROBLEM: The values are FACTORS instead of INTEGERS because d had rows/columns with characters when imported
 # data.matrix() converts factors to integers: http://stackoverflow.com/questions/9480408/convert-factor-to-integer-in-a-data-frame
 
