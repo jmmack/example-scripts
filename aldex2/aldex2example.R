@@ -28,7 +28,7 @@ conds<-c(rep("C", length(C)), rep("I", length(I)))
 #get the clr values
 #this is the main ALDEx function for all downstream analyses
 #mc.samples=128 is often sufficient
-x <- aldex.clr(aldex.in, mc.samples=128, verbose=TRUE)
+x <- aldex.clr(aldex.in, conds, mc.samples=128, verbose=TRUE)
 
 #perform t-test (both Welches and Wilcoxon, plus a Benjamini-Hochberg multiple test correction)
 x.tt <- aldex.ttest(x, conds, paired.test=FALSE)
