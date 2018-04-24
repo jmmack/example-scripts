@@ -1,3 +1,8 @@
+To start:
+- View "JeansNotes.md" in the RLadies markdown workshop (cloned from https://github.com/rladies/meetup-presentations_london_ontario/tree/master/2018-03-06_rmarkdown)
+
+---
+
 For R:
 - See installation and compilation instructions (rmarkdown_install.R)
 
