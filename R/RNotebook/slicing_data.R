@@ -30,3 +30,8 @@ bv<-td[grep('(bbv|bvvc)', rownames(td)),]
 #Get row numbers for features
 psig <- which(x.all$we.eBH < 0.05 & x.all$diff.btw > 0)
 plot(x.all$diff.win[sig], x.all$diff.btw[sig], pch=19)
+
+
+# Using subset()
+e <- subset(d, d$subsys1 != "Clustering-based subsystems")
+#Get all rows of d with column d$subsys1 that does NOT match ""Clustering-based subsystems")
